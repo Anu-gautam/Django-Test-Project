@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Products - Your Ecommerce Store</title>
+    <!-- Bootstrap CSS link (you can use a CDN or download the file) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom styles can be added here -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Product Card Styles */
+        .product-card {
+            border: 1px solid #dee2e6;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Product Image Styles */
+        .product-img {
+            max-height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.1);
+        }
+
+        /* Product Card Body Styles */
+        .product-card-body {
+            padding: 20px;
+        }
+
+        /* Product Price Styles */
+        .product-price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Your Ecommerce Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Products Section -->
+<section class="container mt-5">
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-lg-4">
+            <div class="card product-card">
+                <img src="product1.jpg" alt="Product 1" class="card-img-top product-img">
+                <div class="card-body product-card-body">
+                    <h5 class="card-title">Product 1</h5>
+                    <p class="card-text">Description of Product 1.</p>
+                    <p class="product-price">$19.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-4">
+            <div class="card product-card">
+                <img src="product2.jpg" alt="Product 2" class="card-img-top product-img">
+                <div class="card-body product-card-body">
+                    <h5 class="card-title">Product 2</h5>
+                    <p class="card-text">Description of Product 2.</p>
+                    <p class="product-price">$29.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-4">
+            <div class="card product-card">
+                <img src="product3.jpg" alt="Product 3" class="card-img-top product-img">
+                <div class="card-body product-card-body">
+                    <h5 class="card-title">Product 3</h5>
+                    <p class="card-text">Description of Product 3.</p>
+                    <p class="product-price">$39.99</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Your Ecommerce Store. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Popper.js scripts (you can use a CDN or download the files) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
