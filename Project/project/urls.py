@@ -39,6 +39,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),  # for authentication usin built-in django auth
     path('', include('menu.urls')),
     path('orders/', include('orders.urls')),
 ]
